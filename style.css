@@ -1,0 +1,58 @@
+* {
+    
+    margin: 0;
+    box-sizing: border-box;
+    background-color: black;
+    color: white;
+}
+
+nav {
+    height: 125px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+#logoPic {
+    padding: 15px;
+    height: 90px;
+    width: 90px;
+}
+
+#logoText {
+    font-size: 25px;
+}
+
+#options {
+    background-color: aliceblue;
+}
+
+#options li{
+    float: left;
+    padding: 10px;
+    list-style-type: none;
+}
+
+#options li a:hover {
+    color: #ff8a00;
+}
+
+#options li a{
+    text-decoration: none;
+}
+
+.picCaroussel {
+    display: flex;
+    justify-content: center;
+    width: 100%
+}
+
+#mainPic{
+    width: 80%;
+}
