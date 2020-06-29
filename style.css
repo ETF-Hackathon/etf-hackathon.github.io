@@ -44,26 +44,6 @@
     width: 75px;
 }
 
-/*
-#rocket {
-    height: 65px;
-    margin: 5px 0px 5px -10px;
-    background-color: transparent;
-    z-index: 1;
-}
-
-#circle {
-    height: 65px;
-    width: 65px;
-    position: absolute;
-    left: 0px;
-    background: linear-gradient(0deg, #ff6a16, #ff8a00, #ffc331);
-    background: transparent;
-    border-radius: 50%;
-}
-*/
-
-
 #logoText {
     width: 100%;
     padding-left: 8px;
