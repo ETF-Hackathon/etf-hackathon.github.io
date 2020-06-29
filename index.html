@@ -4,83 +4,96 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETF Hackathons</title>
+    <!-- Link Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+    <!-- Link font -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <!-- Link Bootstrap JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+    <!-- Link Local JavaScript -->
+    <script src="script.js"></script>
 </head>
-<body>
-    <nav id='nav'>
-        <div class="navStuff">
-            <div class="logo">
-                <!--<img src="logo.png" id='logoPic'>
-                <div id="circle"></div>
-                <img src='ETFrocketlogo.svg' id='rocket'>-->
-                <img src='ETFrocketlogo.svg' id='logoPic'>
-                <div id="logoText">
-                    <h2 id='line1'>Elevate the Future</h2>
-                    <h4 id='line2'>Hackathons</h4>
-                </div>
-            </div>
-            <div class="links">
-                <ul id = 'options'>
-                    <li><a>Events</a></li>
-                    <li><a href='https://techhacks.nyc/'>About Us</a></li>
-                    <li><a>Sponsors</a></li>
-                    <li><a>Contact</a></li>
-                </ul>
-            </div>
+<body data-spy="scroll" data-target="#main-nav" data-offset="0">
+    <nav id="main-nav" class="navbar navbar-expand-lg sticky-top">
+        <a class="navbar-brand"><img src='ETFrocketlogo.svg' id='logoPic'>Elevate the Future Hackathons</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="nav nav-pills">
+                <li class="nav-item">
+                    <a class="nav-link" href="#upcomingEventsSection">Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#aboutUsSection">About Us</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Sponsors</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Contact</a>
+                </li>
+            </ul>
         </div>
-    </nav>
+      </nav>
+
     <main>
         <!--<div class="picCaroussel">
-            <img src='stuyhacks.jpg' id='mainPic'>
+            <img src="stuyhacks.jpg" id="mainPic">
         </div>-->
-        
+
         <section id="upcomingEventsSection">
-            <h2 id='sectionTitle'>Upcoming Events</h2>
-            <div class="upcomingEvents">
+            <h2 id="section-title">Upcoming Events</h2>
+            <div class="row">
                 
-                <div class="eventBackground">
+                <div class="event-card col-12 col-md-6">
                     <div class="description">
-                        <h3 class='eventName'>Virtual Hackathon</h3>
-                        <div class="specifics">
-                            <h6 class='eventDate'>Date: July 20th, 2020</h6>
-                            <h6 class='eventLocation'>Location: devpost.com</h6>
+                        <h3 class="eventName">Virtual Hackathon</h3>
+                        <div class="logistics">
+                            Date: July 20th, 2020<br>
+                            <span class="eventLocation">Location: devpost.com</span>
                         </div>
                         <div class="buttons">
-                            <a id='signUpButton'>Sign up</a>
-                            <a id='moreInfoButton'>More Info</a>
+                            <a id="signUpButton">Sign up</a>
+                            <a id="moreInfoButton">More Info</a>
                         </div>
                     </div>
 
                 </div>
-                <div class="eventBackground">
+                <div class="event-card col-12 col-md-6">
                     <div class="description">
-                        <h3 class='eventName'>ETF Hackathon 2021</h3>
-                        <div class="specifics">
-                            <h6 class='eventDate'>Date: Spring 2021</h6>
-                            <h6 class='eventLocation'>Location: TBD</h6>
+                        <h3 class="eventName">ETF Hackathon 2021</h3>
+                        <div class="logistics">
+                            Date: Spring 2021<br>
+                            <span class="eventLocation">Location: TBD</span>
                         </div>
                         <div class="buttons">
-                            <a id='signUpButton'>Notify Me</a>
+                            <a id="signUpButton">Notify Me</a>
                         </div>
                     </div>
 
                 </div>
-                <div class="eventSelector">
+                <!-- <div class="eventSelector">
                 
-                </div>
+                </div> -->
             </div>
         </section>
-        <section id='aboutUsSection'>
-            <h2 id='sectionTitle'>About Us</h2>
-            <div class='eventBackground'></div>
+        <section id="aboutUsSection">
+            <h2 id="section-title">About Us</h2>
+            <div class="row">
+                <div class="col-12 event-card">
+                    <div id="about-us-card">Elevate the Future Hackathons is an initiative fiscally sponsored by 501(c)(3) nonprofit Elevate the Future. We aimed to inspire youths to engage and spark their passions in STEM fields by hosting hackathons and events. These events will allow students to gain insightful understandings of the technology while promoting them to use their creativity to create monumental innovations and inventions.</div>
+                </div>
+            </div>
         </section>
     </main>
     <footer>
         <div class="copyright">
-            <p id='copyrightText'>&copy Elevate the Future 2020</p>
+            <p id="copyrightText">&copy Elevate the Future 2020</p>
         </div>
     </footer>
 </body>
-<script src='script.js'></script>
 </html>
