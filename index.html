@@ -8,7 +8,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav>
+    <nav id='nav'>
         <div class="navStuff">
             <div class="logo">
                 <!--<img src="logo.png" id='logoPic'>
@@ -36,23 +36,39 @@
         </div>-->
         
         <section id="upcomingEventsSection">
+            <h2 id='sectionTitle'>Upcoming Events</h2>
             <div class="upcomingEvents">
-                <h2 id='sectionTitle'>Upcoming Events</h2>
-                <div class="eventBackground">
-                    <h3 class='eventName'>Virtual Hackathon</h3>
-                    <div class="specifics">
-                        <h6 class='eventDate'>Date: July 20th, 2020</h6>
-                        <h6 class='eventLocation'>Location: devpost.com</h6>
-                    </div>
-                    <div class="buttons">
-                        <a id='signUpButton'>Sign up</a>
-                        <a id='moreInfoButton'>More Info</a>
-                    </div>
-                </div>
-            </div>
-            <div class="eventSelector">
                 
-            </div>
+                <div class="eventBackground">
+                    <div class="description">
+                        <h3 class='eventName'>Virtual Hackathon</h3>
+                        <div class="specifics">
+                            <h6 class='eventDate'>Date: July 20th, 2020</h6>
+                            <h6 class='eventLocation'>Location: devpost.com</h6>
+                        </div>
+                        <div class="buttons">
+                            <a id='signUpButton'>Sign up</a>
+                            <a id='moreInfoButton'>More Info</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="eventBackground">
+                    <div class="description">
+                        <h3 class='eventName'>ETF Hackathon 2021</h3>
+                        <div class="specifics">
+                            <h6 class='eventDate'>Date: Spring 2021</h6>
+                            <h6 class='eventLocation'>Location: TBD</h6>
+                        </div>
+                        <div class="buttons">
+                            <a id='signUpButton'>Notify Me</a>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="eventSelector">
+                
+                </div>
             </div>
         </section>
         <section id='aboutUsSection'>
@@ -66,4 +82,5 @@
         </div>
     </footer>
 </body>
+<script src='script.js'></script>
 </html>
