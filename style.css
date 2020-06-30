@@ -69,16 +69,12 @@ section {
     border-radius: 12px;
     margin: 20px;
     max-width: 30vw;
-    text-align: center;
-}
-
-.event-card div {
-    padding: 25px;
+    padding-left: 50px;
 }
 
 #about-us-card {
     height: 100%;
-    margin: 10% auto;
+    margin: 10%;
 }
 
 .description {
@@ -93,7 +89,6 @@ section {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 50px;
-    padding-top: 50px;
 }
 
 .logistics {
