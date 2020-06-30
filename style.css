@@ -94,7 +94,10 @@ ul {
 }
 
 .active {
-    background-color: cornflowerblue !important;
+    background-color: #ff8a00 !important;
+    padding: 5px;
+    border-radius: 5px;
+    color: white !important;
 }
 
 body {
