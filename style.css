@@ -8,7 +8,7 @@
 }
 
 #nav {
-    height: 18vh;
+    height: 20vh;
     transition: 0.1s;
     width: 100%;
     background-color: #e2e2e2;
@@ -43,6 +43,8 @@
     margin-right: -10px;
     height: 75px;
     width: 75px;
+    font-family:'Montserrat';
+    font-weight: bold;
 }
 
 #logoText {
@@ -93,6 +95,11 @@ body {
     flex-direction: column;
 }
 
+.offset{
+    width: 100%;
+    height: 10vh;
+}
+
 section {
     display: flex;
     flex-direction: column;
@@ -103,6 +110,7 @@ section {
     align-items: center;
     justify-content: center;
     margin-bottom: 2vh;
+    margin-top: -9vh;
 }
 
 .upcomingEvents {
@@ -118,7 +126,6 @@ section {
     font-weight: bold;
     font-size: 50px;
     margin-bottom: 4vh;
-    margin-top: -10vh;
 }
 
 .eventBackground {
@@ -129,6 +136,7 @@ section {
     position: relative;
     padding-left: 40px;
     font-family: 'Poppins';
+    border-radius: 12px;
 }
 
 .description {
@@ -162,8 +170,7 @@ section {
 }
 
 #signUpButton, #moreInfoButton {
-    border-style: solid;
-    border-color: black;
+    border-radius: 12px;
     padding: 7px 20px;
     background-color: #e2e2e2;
     font-size: 20px;
@@ -173,6 +180,12 @@ section {
 #signUpButton:hover, #moreInfoButton:hover {
     background-color: black;
     color: #e2e2e2;
+    cursor: pointer;
+}
+
+.spacing {
+    height: 10vh;
+    width: 100%;
 }
 
 .eventSelector{

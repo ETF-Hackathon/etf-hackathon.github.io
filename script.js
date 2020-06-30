@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', _ => {
     window.onscroll = _ => {
-        if (document.documentElement.scrollTop > 0.1 || document.body.scrollTop > 80) {
+        if (document.documentElement.scrollTop > 0 || document.body.scrollTop > 0) {
             document.querySelector('nav').style.height = '10vh'
             document.querySelector('nav').style.backgroundColor = '#cecece'
         }
@@ -11,4 +11,3 @@ document.addEventListener('DOMContentLoaded', _ => {
         }
     }
 })
-

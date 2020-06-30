@@ -4,10 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ETF Hackathons</title>
-    <link rel="stylesheet" href="style.css">
+    
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Poppins:wght@600;700&family=Roboto:wght@300;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 </head>
-<body>
+<body data-spy='scroll'>
     <nav id='nav'>
         <div class="navStuff">
             <div class="logo">
@@ -22,20 +24,20 @@
             </div>
             <div class="links">
                 <ul id = 'options'>
-                    <li><a>Events</a></li>
-                    <li><a href='https://techhacks.nyc/'>About Us</a></li>
-                    <li><a>Sponsors</a></li>
-                    <li><a>Contact</a></li>
+                    <li><a href='#upcomingEventsSection' class='buttons'>Events</a></li>
+                    <li><a href='#aboutUsSection' class='buttons'>About Us</a></li>
+                    <li><a href='#sponsorsSection' class='buttons'>Sponsors</a></li>
+                    <li><a href='#contactSection' class='buttons'>Contact</a></li>
                 </ul>
             </div>
         </div>
     </nav>
     <main>
-        <!--<div class="picCaroussel">
-            <img src='stuyhacks.jpg' id='mainPic'>
-        </div>-->
         
         <section id="upcomingEventsSection">
+            <div class='offset'>
+            
+            </div>
             <h2 id='sectionTitle'>Upcoming Events</h2>
             <div class="upcomingEvents">
                 
@@ -66,13 +68,34 @@
                     </div>
 
                 </div>
+                
                 <div class="eventSelector">
                 
                 </div>
             </div>
         </section>
+        <div class='spacing'>
+            
+        </div>
         <section id='aboutUsSection'>
+            <div class='offset'>
+            
+            </div>
             <h2 id='sectionTitle'>About Us</h2>
+            <div class='eventBackground'></div>
+        </section>
+        <section id='sponsorsSection'>
+            <div class='offset'>
+            
+            </div>
+            <h2 id='sectionTitle'>Sponsors</h2>
+            <div class='eventBackground'></div>
+        </section>
+        <section id='contactSection'>
+            <div class='offset'>
+            
+            </div>
+            <h2 id='sectionTitle'>Contact</h2>
             <div class='eventBackground'></div>
         </section>
     </main>
@@ -81,6 +104,10 @@
             <p id='copyrightText'>&copy Elevate the Future 2020</p>
         </div>
     </footer>
+    <script src='script.js'></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
 </body>
-<script src='script.js'></script>
+
 </html>
