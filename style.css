@@ -53,14 +53,18 @@
     font-size: 20px;
 }
 
+h2, h6 {
+    font-weight: bold;
+}
+
 .links{
     position: absolute;
     right: 0px;
-    background-color: transparent;
+    /* background-color: transparent; */
 }
 
 #options {
-    background-color: transparent;    
+    /* background-color: transparent;     */
 }
 
 ul {
@@ -71,7 +75,7 @@ ul {
 #options li{
     float: left;
     list-style-type: none;
-    background-color: transparent;
+    /* background-color: transparent; */
     margin-left: 20px;
     font-size: 20px;
 }
@@ -86,7 +90,11 @@ ul {
 
 #options li a{
     text-decoration: none;
-    background-color: transparent;
+    /* background-color: transparent; */
+}
+
+.active {
+    background-color: cornflowerblue !important;
 }
 
 body {
