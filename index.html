@@ -17,18 +17,19 @@
     <script src="script.js"></script>
 </head>
 <body data-spy="scroll" data-target="#main-nav" data-offset="250">
+
     <nav id="main-nav" class="navbar navbar-light navbar-expand-lg sticky-top">
         <a class="navbar-brand"><img src='ETFrocketlogo.svg' id='logoPic'>Elevate the Future Hackathons</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="nav nav-pills">
+        <div class="collapse navbar-collapse w-100" id="navbarNav">
+            <ul class="nav nav-pills ml-auto">
                 <li class="nav-item">
-                    <a class="nav-link" href="#upcomingEventsSection">Events</a>
+                    <a class="nav-link" href="#upcoming-events-section">Events</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#aboutUsSection">About Us</a>
+                    <a class="nav-link" href="#about-us-section">About Us</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Sponsors</a>
@@ -38,58 +39,64 @@
                 </li>
             </ul>
         </div>
-      </nav>
+    </nav>
 
-    <main>
-        <!--<div class="picCaroussel">
-            <img src="stuyhacks.jpg" id="mainPic">
-        </div>-->
-
-        <section id="upcomingEventsSection">
+    <main class="container">
+        <section id="upcoming-events-section">
             <h2 id="section-title">Upcoming Events</h2>
-            <div class="row">
-                
-                <div class="event-card col-12 col-md-6">
-                    <div class="description">
-                        <h3 class="eventName">Virtual Hackathon</h3>
-                        <div class="logistics">
-                            Date: July 20th, 2020<br>
-                            <span class="eventLocation">Location: devpost.com</span>
-                        </div>
-                        <div class="buttons">
-                            <a id="signUpButton">Sign up</a>
-                            <a id="moreInfoButton">More Info</a>
+            <div class="row justify-content-md-center">
+
+                <!-- virtual Hackathon Card -->
+                <div class="col-sm-12 col-md-6">
+                    <div class="event-card card">
+                        <div class="card-body">
+                            <div class="description">
+                                <h3 class="eventName">Virtual Hackathon</h3>
+                                <div class="logistics">
+                                    Date: July 20th, 2020<br>
+                                    <span class="eventLocation">Location: devpost.com</span>
+                                </div>
+                                <div class="buttons d-flex justify-content-start">
+                                    <a>Sign up</a>
+                                    <a>More Info</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
-                <div class="event-card col-12 col-md-6">
-                    <div class="description">
-                        <h3 class="eventName">ETF Hackathon 2021</h3>
-                        <div class="logistics">
-                            Date: Spring 2021<br>
-                            <span class="eventLocation">Location: TBD</span>
-                        </div>
-                        <div class="buttons">
-                            <a id="signUpButton">Notify Me</a>
+
+                <!-- ETF Hackathon 2021 Card -->
+                <div class="col-sm-12 col-md-6">   
+                    <div class="event-card card">
+                        <div class="card-body">
+                            <div class="description">
+                                <h3 class="eventName">ETF Hackathon 2021</h3>
+                                <div class="logistics">
+                                    Date: Spring 2021<br>
+                                    <span class="eventLocation">Location: TBD</span>
+                                </div>
+                                <div class="buttons d-flex justify-content-start">
+                                    <a>Notify Me</a>
+                                </div>
+                            </div>
                         </div>
                     </div>
-
                 </div>
                 <!-- <div class="eventSelector">
                 
                 </div> -->
             </div>
         </section>
-        <section id="aboutUsSection">
+        <section id="about-us-section">
             <h2 id="section-title">About Us</h2>
             <div class="row">
-                <div class="col-12 event-card">
-                    <div id="about-us-card">Elevate the Future Hackathons is an initiative fiscally sponsored by 501(c)(3) nonprofit Elevate the Future. We aimed to inspire youths to engage and spark their passions in STEM fields by hosting hackathons and events. These events will allow students to gain insightful understandings of the technology while promoting them to use their creativity to create monumental innovations and inventions.</div>
+                <div class="col-12">
+                    <div id="about-us">Elevate the Future Hackathons is an initiative fiscally sponsored by 501(c)(3) nonprofit Elevate the Future. We aimed to inspire youths to engage and spark their passions in STEM fields by hosting hackathons and events. These events will allow students to gain insightful understandings of the technology while promoting them to use their creativity to create monumental innovations and inventions.</div>
                 </div>
             </div>
         </section>
     </main>
+
     <footer>
         <div class="copyright">
             <p id="copyrightText">&copy Elevate the Future 2020</p>

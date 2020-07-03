@@ -15,9 +15,9 @@
     background-color: #e2e2e2;
 }
 
-#navbarNav {
-    margin-left: 33%;
-}
+/* #navbarNav {
+    margin: auto 20%;
+} */
 
 #logoPic {
     height: 75px;
@@ -67,14 +67,14 @@ section {
     height: 375px;
     font-family: 'Poppins';
     border-radius: 12px;
-    margin: 20px;
-    max-width: 30vw;
-    padding-left: 50px;
+    margin: 20px 0;
+    padding: 0 30px;
+    width: 100%;
 }
 
-#about-us-card {
+#about-us {
     height: 100%;
-    margin: 10%;
+    /* margin: 5% 50px; */
 }
 
 .description {
@@ -97,7 +97,7 @@ section {
     font-size: 20px;
 }
 
-#signUpButton, #moreInfoButton {
+.buttons a {
     padding: 7px 20px;
     background-color: #e2e2e2;
     font-size: 20px;
@@ -105,19 +105,19 @@ section {
     border-radius: 10px;
 }
 
-#signUpButton:hover, #moreInfoButton:hover {
+.buttons a:hover, .buttons a:hover {
     background-color: black;
     color: #e2e2e2;
 }
 
-.eventSelector{
+/* .eventSelector{
     position: absolute;
     top: 0px;
     right: 0px;
     background-color: transparent;
     height: 100%;
     width: 50px
-}
+} */
 
 footer {
     width: 100%;
