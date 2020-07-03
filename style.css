@@ -45,6 +45,7 @@
     width: 75px;
     font-family:'Montserrat';
     font-weight: bold;
+    animation: 0.1s;
 }
 
 #logoText {
@@ -63,18 +64,21 @@ h2, h6 {
     /* background-color: transparent; */
 }
 
-#options {
-    /* background-color: transparent;     */
-}
+/* #options {
+    background-color: transparent;
+    
+} */
 
 ul {
     margin: 0;
     padding: 0;
+    color: black;
 }
 
 #options li{
     float: left;
     list-style-type: none;
+    
     /* background-color: transparent; */
     margin-left: 20px;
     font-size: 20px;
@@ -85,16 +89,20 @@ ul {
 }
 
 #options li a:hover {
-    color: #ff8a00;
+    color: #ffbb00;
 }
 
 #options li a{
     text-decoration: none;
+    color: black;
     /* background-color: transparent; */
 }
 
 .active {
-    background-color: cornflowerblue !important;
+    background-color: #ff8a00 !important;
+    color: black;
+    padding: 5px 10px;
+    border-radius: 10px;
 }
 
 body {
@@ -111,14 +119,11 @@ body {
 section {
     display: flex;
     flex-direction: column;
-    align-items: left;
     width: 100%;
     height: 65vh;
-    display: flex;
     align-items: center;
-    justify-content: center;
     margin-bottom: 2vh;
-    margin-top: -9vh;
+    margin-top: -7vh;
 }
 
 .upcomingEvents {
@@ -196,6 +201,36 @@ section {
     width: 100%;
 }
 
+#aboutUsSection {
+    display: flex;
+    /* align-items: flex-start; */
+    width: 100%;
+    height: 40vh;
+}
+
+.aboutUsBackground {
+    height: 30vh;
+    width: 80%;
+    display: flex;
+    /* align-items: center; */
+    background: transparent;
+    position: relative;
+    /* padding: 0px 40px; */
+    font-family: 'Poppins';
+    border-radius: 12px;
+}
+
+#orgDescription {
+    font-family: 'Roboto';
+    font-size: 30px;
+}
+
+
+
+
+
+
+
 .eventSelector{
     position: absolute;
     top: 0px;
@@ -215,7 +250,7 @@ footer {
 
 .copyright {
     width: var(--width);
-    height: 10vh;
+    height: 50vh;
     display: flex;
     align-items: center;
 }
@@ -224,7 +259,8 @@ footer {
     nav {
         height: 125px;
     }
-    
+
+
     .links {
         display: none;
     }
