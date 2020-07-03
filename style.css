@@ -15,13 +15,10 @@
     background-color: #e2e2e2;
 }
 
-/* #navbarNav {
-    margin: auto 20%;
-} */
-
-#logoPic {
+#logo-pic {
     height: 75px;
     width: 75px;
+    margin-right: 15px;
 }
 
 .nav-item {
@@ -52,8 +49,11 @@ section {
     display: flex;
     flex-direction: column;
     width: 100%;
-    align-items: center;
+    align-items: left;
     margin-bottom: 75px;
+    /* Used to compensate Bootstrap's issue with fixed navbar & Scrollspy */
+    padding-top: 6rem;
+    margin-top: -6rem;
 }
 
 #section-title {
