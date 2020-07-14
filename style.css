@@ -56,7 +56,7 @@ section {
     margin-top: -6rem;
 }
 
-#section-title {
+.section-title {
     font-family: 'Poppins';
     font-weight: bold;
     font-size: 50px;
@@ -72,9 +72,10 @@ section {
     width: 100%;
 }
 
-#about-us {
+.content {
     height: 100%;
-    /* margin: 5% 50px; */
+    font-weight: bolder;
+    font-size: 1.25em;
 }
 
 .description {
@@ -85,7 +86,7 @@ section {
     justify-content: space-evenly;
 }
 
-.eventName {
+.event-name {
     font-family: 'Poppins';
     font-weight: 400;
     font-size: 50px;
@@ -106,7 +107,7 @@ section {
 }
 
 .buttons a:hover, .buttons a:hover {
-    background-color: black;
+    background-color: black !important;
     color: #e2e2e2;
 }
 
@@ -118,6 +119,11 @@ section {
     height: 100%;
     width: 50px
 } */
+
+#sponsor-btn {
+    background-color: #ff8800;
+    font-weight: 600;
+}
 
 footer {
     width: 100%;
